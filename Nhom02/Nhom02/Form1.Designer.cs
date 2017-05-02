@@ -46,19 +46,21 @@
             this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridViewCa = new System.Windows.Forms.DataGridView();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.btnAdd = new System.Windows.Forms.ToolStripButton();
-            this.btnEdit = new System.Windows.Forms.ToolStripButton();
-            this.btnDelete = new System.Windows.Forms.ToolStripButton();
+            this.btnAddCa = new System.Windows.Forms.ToolStripButton();
+            this.btnEditCa = new System.Windows.Forms.ToolStripButton();
+            this.btnDeleteCa = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.txtKeyword = new System.Windows.Forms.ToolStripTextBox();
-            this.btnFind = new System.Windows.Forms.ToolStripButton();
+            this.txtKeywordCa = new System.Windows.Forms.ToolStripTextBox();
+            this.btnFindCa = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCa)).BeginInit();
             this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,6 +221,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dataGridViewCa);
             this.tabPage3.Controls.Add(this.toolStrip3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -227,67 +230,78 @@
             this.tabPage3.Text = "Quản lý ca";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewCa
+            // 
+            this.dataGridViewCa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dataGridViewCa.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewCa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCa.Location = new System.Drawing.Point(4, 29);
+            this.dataGridViewCa.Name = "dataGridViewCa";
+            this.dataGridViewCa.Size = new System.Drawing.Size(446, 150);
+            this.dataGridViewCa.TabIndex = 2;
+            // 
             // toolStrip3
             // 
             this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnAdd,
-            this.btnEdit,
-            this.btnDelete,
+            this.btnAddCa,
+            this.btnEditCa,
+            this.btnDeleteCa,
             this.toolStripSeparator3,
-            this.txtKeyword,
-            this.btnFind});
+            this.txtKeywordCa,
+            this.btnFindCa});
             this.toolStrip3.Location = new System.Drawing.Point(0, 0);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.Size = new System.Drawing.Size(845, 25);
             this.toolStrip3.TabIndex = 1;
             this.toolStrip3.Text = "toolStrip3";
             // 
-            // btnAdd
+            // btnAddCa
             // 
-            this.btnAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAdd.Image = global::Nhom02.Properties.Resources.add;
-            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(23, 22);
-            this.btnAdd.Text = "toolStripButton1";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAddCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAddCa.Image = global::Nhom02.Properties.Resources.add;
+            this.btnAddCa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAddCa.Name = "btnAddCa";
+            this.btnAddCa.Size = new System.Drawing.Size(23, 22);
+            this.btnAddCa.Text = "toolStripButton1";
+            this.btnAddCa.Click += new System.EventHandler(this.btnAddCa_Click);
             // 
-            // btnEdit
+            // btnEditCa
             // 
-            this.btnEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnEdit.Image = global::Nhom02.Properties.Resources.edit;
-            this.btnEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(23, 22);
-            this.btnEdit.Text = "toolStripButton2";
+            this.btnEditCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnEditCa.Image = global::Nhom02.Properties.Resources.edit;
+            this.btnEditCa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnEditCa.Name = "btnEditCa";
+            this.btnEditCa.Size = new System.Drawing.Size(23, 22);
+            this.btnEditCa.Text = "toolStripButton2";
             // 
-            // btnDelete
+            // btnDeleteCa
             // 
-            this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDelete.Image = global::Nhom02.Properties.Resources.del;
-            this.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(23, 22);
-            this.btnDelete.Text = "toolStripButton3";
+            this.btnDeleteCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDeleteCa.Image = global::Nhom02.Properties.Resources.del;
+            this.btnDeleteCa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDeleteCa.Name = "btnDeleteCa";
+            this.btnDeleteCa.Size = new System.Drawing.Size(23, 22);
+            this.btnDeleteCa.Text = "toolStripButton3";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
-            // txtKeyword
+            // txtKeywordCa
             // 
-            this.txtKeyword.Name = "txtKeyword";
-            this.txtKeyword.Size = new System.Drawing.Size(100, 25);
+            this.txtKeywordCa.Name = "txtKeywordCa";
+            this.txtKeywordCa.Size = new System.Drawing.Size(100, 25);
             // 
-            // btnFind
+            // btnFindCa
             // 
-            this.btnFind.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnFind.Image = global::Nhom02.Properties.Resources.find;
-            this.btnFind.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(23, 22);
-            this.btnFind.Text = "toolStripButton4";
+            this.btnFindCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnFindCa.Image = global::Nhom02.Properties.Resources.find;
+            this.btnFindCa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFindCa.Name = "btnFindCa";
+            this.btnFindCa.Size = new System.Drawing.Size(23, 22);
+            this.btnFindCa.Text = "toolStripButton4";
             // 
             // Form1
             // 
@@ -296,6 +310,7 @@
             this.ClientSize = new System.Drawing.Size(851, 489);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buffet Hương Rừng";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -308,6 +323,7 @@
             this.toolStrip2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCa)).EndInit();
             this.toolStrip3.ResumeLayout(false);
             this.toolStrip3.PerformLayout();
             this.ResumeLayout(false);
@@ -335,12 +351,13 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStrip toolStrip3;
-        private System.Windows.Forms.ToolStripButton btnAdd;
-        private System.Windows.Forms.ToolStripButton btnEdit;
-        private System.Windows.Forms.ToolStripButton btnDelete;
+        private System.Windows.Forms.ToolStripButton btnAddCa;
+        private System.Windows.Forms.ToolStripButton btnEditCa;
+        private System.Windows.Forms.ToolStripButton btnDeleteCa;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripTextBox txtKeyword;
-        private System.Windows.Forms.ToolStripButton btnFind;
+        private System.Windows.Forms.ToolStripTextBox txtKeywordCa;
+        private System.Windows.Forms.ToolStripButton btnFindCa;
+        private System.Windows.Forms.DataGridView dataGridViewCa;
     }
 }
 

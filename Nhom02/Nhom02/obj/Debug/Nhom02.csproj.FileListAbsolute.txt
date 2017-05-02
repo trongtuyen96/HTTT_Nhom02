@@ -14,3 +14,4 @@ D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.csprojRe
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.Form1.resources
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.Properties.Resources.resources
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.csproj.GenerateResource.Cache
+D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.ThemCaForm.resources
