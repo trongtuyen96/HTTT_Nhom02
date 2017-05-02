@@ -252,7 +252,7 @@
             this.dataGridViewCa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCa.Location = new System.Drawing.Point(4, 29);
             this.dataGridViewCa.Name = "dataGridViewCa";
-            this.dataGridViewCa.Size = new System.Drawing.Size(446, 150);
+            this.dataGridViewCa.Size = new System.Drawing.Size(446, 427);
             this.dataGridViewCa.TabIndex = 2;
             // 
             // toolStrip3
