@@ -20,5 +20,10 @@ namespace Nhom02
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
