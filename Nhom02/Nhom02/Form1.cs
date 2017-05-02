@@ -15,15 +15,5 @@ namespace Nhom02
         {
             InitializeComponent();
         }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

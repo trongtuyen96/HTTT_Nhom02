@@ -14,3 +14,11 @@ D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.csprojRe
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.Form1.resources
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.Properties.Resources.resources
 D:\1453043\CTT204 - PTTKHTTT\HTTT_Nhom02\Nhom02\Nhom02\obj\Debug\Nhom02.csproj.GenerateResource.Cache
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.csprojResolveAssemblyReference.cache
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.Form1.resources
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.Properties.Resources.resources
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.csproj.GenerateResource.Cache
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\bin\Debug\Nhom02.exe
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\bin\Debug\Nhom02.pdb
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.exe
+D:\Studying\Year 3\Term 2\Analysis and Design Database\Seminar\BuffetHuongRung\Source code\Nhom02\Nhom02\obj\Debug\Nhom02.pdb
