@@ -17,6 +17,7 @@ namespace Nhom02
         {
             InitializeComponent();
             cmbLoaiCa.SelectedItem = "Trưa";
+            btnPhanCong.Enabled = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -25,11 +26,18 @@ namespace Nhom02
             {
                 MessageBox.Show("Thêm ca thành công", "Thông báo",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DialogResult = DialogResult.OK;
-                Close();
+                //DialogResult = DialogResult.OK;
+                //Close();
+                btnPhanCong.Enabled = true;
             }
             else MessageBox.Show("Thêm ca thất bại", "Lỗi",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnPhanCong_Click(object sender, EventArgs e)
+        {
+            ChiaCaNVForm chiaForm = new ChiaCaNVForm(dateTimePicker.Value, cmbLoaiCa.SelectedItem.ToString());
+            chiaForm.ShowDialog();
         }
     }
 }

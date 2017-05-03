@@ -47,5 +47,16 @@ namespace Nhom02
                 }
             };
         }
+
+        private void btnDeleteCa_Click(object sender, EventArgs e)
+        {
+            // index row đang được chọn
+            int rowindex = dataGridViewCa.CurrentCell.RowIndex;
+            // delete theo id 
+            _caData.delete(dataGridViewCa.Rows[rowindex].Cells[0].Value.ToString());
+
+            // load lại danh sách ca
+            loadDataGridViewCa();
+        }
     }
 }
