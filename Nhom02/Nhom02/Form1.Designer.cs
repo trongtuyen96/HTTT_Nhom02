@@ -272,14 +272,6 @@
             // 
             // btnAddCa
             // 
-<<<<<<< HEAD
-            this.btnAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAdd.Image = global::Nhom02.Properties.Resources.add;
-            this.btnAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(23, 22);
-            this.btnAdd.Text = "toolStripButton1";
-=======
             this.btnAddCa.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.btnAddCa.Image = global::Nhom02.Properties.Resources.add;
             this.btnAddCa.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -287,7 +279,6 @@
             this.btnAddCa.Size = new System.Drawing.Size(23, 22);
             this.btnAddCa.Text = "toolStripButton1";
             this.btnAddCa.Click += new System.EventHandler(this.btnAddCa_Click);
->>>>>>> 852681b24f6d45d451e7834601302018c6812933
             // 
             // btnEditCa
             // 

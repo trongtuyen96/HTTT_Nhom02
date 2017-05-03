@@ -17,8 +17,6 @@ namespace Nhom02
             InitializeComponent();
             loadDataGridViewCa();
         }
-<<<<<<< HEAD
-=======
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -49,6 +47,5 @@ namespace Nhom02
                 }
             };
         }
->>>>>>> 852681b24f6d45d451e7834601302018c6812933
     }
 }

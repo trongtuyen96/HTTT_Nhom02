@@ -56,16 +56,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="TheKhachHangDTO.cs" />
-=======
     <Compile Include="ThemCaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThemCaForm.Designer.cs">
       <DependentUpon>ThemCaForm.cs</DependentUpon>
     </Compile>
->>>>>>> 852681b24f6d45d451e7834601302018c6812933
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
