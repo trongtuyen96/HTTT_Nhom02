@@ -30,11 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewThe = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnAddUserCard = new System.Windows.Forms.ToolStripButton();
-            this.btnEditUserCard = new System.Windows.Forms.ToolStripButton();
-            this.btnDelUserCard = new System.Windows.Forms.ToolStripButton();
+            this.btnThemThe = new System.Windows.Forms.ToolStripButton();
+            this.btnSuaThe = new System.Windows.Forms.ToolStripButton();
+            this.btnXoaThe = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -57,7 +57,7 @@
             this.btnFindCa = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThe)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
@@ -80,7 +80,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.dataGridViewThe);
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -90,22 +90,22 @@
             this.tabPage1.Text = "Thẻ khách hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewThe
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 32);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(845, 436);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewThe.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGridViewThe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewThe.Location = new System.Drawing.Point(0, 32);
+            this.dataGridViewThe.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridViewThe.Name = "dataGridViewThe";
+            this.dataGridViewThe.Size = new System.Drawing.Size(845, 436);
+            this.dataGridViewThe.TabIndex = 1;
             // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnAddUserCard,
-            this.btnEditUserCard,
-            this.btnDelUserCard,
+            this.btnThemThe,
+            this.btnSuaThe,
+            this.btnXoaThe,
             this.toolStripSeparator1,
             this.toolStripTextBox1,
             this.toolStripButton4});
@@ -115,32 +115,34 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // btnAddUserCard
+            // btnThemThe
             // 
-            this.btnAddUserCard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAddUserCard.Image = global::Nhom02.Properties.Resources.add;
-            this.btnAddUserCard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnAddUserCard.Name = "btnAddUserCard";
-            this.btnAddUserCard.Size = new System.Drawing.Size(23, 22);
-            this.btnAddUserCard.Text = "Them";
+            this.btnThemThe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnThemThe.Image = global::Nhom02.Properties.Resources.add;
+            this.btnThemThe.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnThemThe.Name = "btnThemThe";
+            this.btnThemThe.Size = new System.Drawing.Size(23, 22);
+            this.btnThemThe.Text = "Thêm thẻ khách hàng";
+            this.btnThemThe.Click += new System.EventHandler(this.btnThemThe_Click);
             // 
-            // btnEditUserCard
+            // btnSuaThe
             // 
-            this.btnEditUserCard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnEditUserCard.Image = global::Nhom02.Properties.Resources.edit;
-            this.btnEditUserCard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnEditUserCard.Name = "btnEditUserCard";
-            this.btnEditUserCard.Size = new System.Drawing.Size(23, 22);
-            this.btnEditUserCard.Text = "Sua";
+            this.btnSuaThe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSuaThe.Image = global::Nhom02.Properties.Resources.edit;
+            this.btnSuaThe.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSuaThe.Name = "btnSuaThe";
+            this.btnSuaThe.Size = new System.Drawing.Size(23, 22);
+            this.btnSuaThe.Text = "Sửa thẻ khách hàng";
             // 
-            // btnDelUserCard
+            // btnXoaThe
             // 
-            this.btnDelUserCard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDelUserCard.Image = global::Nhom02.Properties.Resources.del;
-            this.btnDelUserCard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDelUserCard.Name = "btnDelUserCard";
-            this.btnDelUserCard.Size = new System.Drawing.Size(23, 22);
-            this.btnDelUserCard.Text = "Xoa";
+            this.btnXoaThe.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnXoaThe.Image = global::Nhom02.Properties.Resources.del;
+            this.btnXoaThe.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnXoaThe.Name = "btnXoaThe";
+            this.btnXoaThe.Size = new System.Drawing.Size(23, 22);
+            this.btnXoaThe.Text = "Xoá thẻ khách hàng";
+            this.btnXoaThe.Click += new System.EventHandler(this.btnXoaThe_Click);
             // 
             // toolStripSeparator1
             // 
@@ -329,7 +331,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThe)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -367,13 +369,13 @@
         private System.Windows.Forms.ToolStripButton btnFindCa;
         private System.Windows.Forms.DataGridView dataGridViewCa;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnAddUserCard;
-        private System.Windows.Forms.ToolStripButton btnEditUserCard;
-        private System.Windows.Forms.ToolStripButton btnDelUserCard;
+        private System.Windows.Forms.ToolStripButton btnThemThe;
+        private System.Windows.Forms.ToolStripButton btnSuaThe;
+        private System.Windows.Forms.ToolStripButton btnXoaThe;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewThe;
     }
 }
 
