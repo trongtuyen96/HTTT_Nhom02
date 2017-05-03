@@ -9,7 +9,11 @@ namespace Nhom02
 
         public bool save(DateTime ngay, string loai)
         {
-            CaLamViecDTO ca = new CaLamViecDTO(ngay.ToString("ddmmyyyy") + loai, ngay, loai);
+            string id = "";
+            if (loai == "Trưa")
+                id = ngay.ToString("ddmmyyyy") + "Tr";
+            else id = ngay.ToString("ddmmyyyy") + "To";
+            CaLamViecDTO ca = new CaLamViecDTO(id, ngay, loai);
             if (dataCaLamViec.Save(ca))
             {
                 return true;
@@ -20,6 +24,11 @@ namespace Nhom02
         public DataTable search()
         {
             return dataCaLamViec.Search();
+        }
+
+        public bool delete(string ID)
+        {
+            return dataCaLamViec.Delete(ID);
         }
     }
 }

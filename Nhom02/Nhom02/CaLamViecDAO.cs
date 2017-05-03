@@ -51,6 +51,28 @@ namespace Nhom02
             catch (Exception ex) { throw ex; }
         }
 
+        public bool Delete(string id)
+        {
+            this.connect();
+            bool bCheck = true;
+            string query = "delete from CaLamViec where([id] = @ID)";
+            this.cm = new SqlCommand(query, cnn);
+            this.cm.Parameters.Add(new SqlParameter("@ID", id));
+            try
+            {
+                this.cm.ExecuteNonQuery();
+                this.disconnect();
+            }
+            catch (Exception ex)
+            {
+                this.disconnect();
+                bCheck = false;
+                throw ex;
+            }
+            return bCheck;
+        }
+
+
         #endregion
     }
 }
