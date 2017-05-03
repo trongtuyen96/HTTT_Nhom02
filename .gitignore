@@ -1,6 +1,9 @@
 [Tt]humbs.db
 *.DS_Store
 *.[Oo]bj
+*.exe
+*.pdb
+*.manifest
 *.user
 *.aps
 *.pch
@@ -23,6 +26,4 @@
 *.xml
 ipch/
 obj/
-[Bb]in
-[Dd]ebug*/
 [Rr]elease*/
