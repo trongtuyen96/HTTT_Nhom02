@@ -51,6 +51,9 @@
     <Compile Include="ChiaCaNVForm.Designer.cs">
       <DependentUpon>ChiaCaNVForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTThucDonCTL.cs" />
+    <Compile Include="CTThucDonDAO.cs" />
+    <Compile Include="CTThucDonDTO.cs" />
     <Compile Include="CT_CaLamViecCTL.cs" />
     <Compile Include="CT_CaLamViecDAO.cs" />
     <Compile Include="CT_CaLamViecDTO.cs" />
@@ -62,6 +65,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MonAnCTL.cs" />
+    <Compile Include="MonAnDAO.cs" />
+    <Compile Include="MonAnDTO.cs" />
     <Compile Include="NhanVienCTL.cs" />
     <Compile Include="NhanVienDAO.cs" />
     <Compile Include="NhanVienDTO.cs" />
@@ -82,6 +88,9 @@
     <Compile Include="ThemTheKhachHangForm.Designer.cs">
       <DependentUpon>ThemTheKhachHangForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThucDonCTL.cs" />
+    <Compile Include="ThucDonDAO.cs" />
+    <Compile Include="ThucDonDTO.cs" />
     <EmbeddedResource Include="ChiaCaNVForm.resx">
       <DependentUpon>ChiaCaNVForm.cs</DependentUpon>
       <SubType>Designer</SubType>
