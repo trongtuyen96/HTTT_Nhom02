@@ -50,26 +50,6 @@ namespace Nhom02
             return bCheck;
         }
 
-        //public bool CapNhat(TheKhachHangDTO the)
-        //{
-        //    this.connect();
-        //    bool bCheck = true;
-        //    string query = "UPDATE TheKhachHang SET [HoTen]=@HOTEN, [SDT]=@SDT, [NgaySinh]=@NGAYSINH, [CMND]=@CMND," +
-        //        "[DiemTichLuy]=@DIEMTICHLUY where [id] = @ID";
-        //    this.cm = new SqlCommand(query, cnn);
-        //    this.cm.Parameters.Add(new SqlParameter("@HOTEN", the.HoTen.Trim()));
-        //    this.cm.Parameters.Add(new SqlParameter("@SDT", the.SDT.Trim()));
-        //    this.cm.Parameters.Add(new SqlParameter("@NGAYSINH", the.NgaySinh.Date));
-        //    this.cm.Parameters.Add(new SqlParameter("@CMND", the.CMND.Trim()));
-        //    this.cm.Parameters.Add(new SqlParameter("@DIEMTICHLUY", the.DiemTichLuy));
-        //    this.cm.Parameters.Add(new SqlParameter("@ID", the.Id));
-            
-        //    try
-        //    { this.cm.ExecuteNonQuery(); this.disconnect(); }
-        //    catch (Exception ex) { this.disconnect(); bCheck = false; throw ex; }
-        //    return bCheck;
-        //}
-
         public DataTable LoadDuLieu()
         {
             SqlCommand cm = new SqlCommand();
@@ -83,6 +63,50 @@ namespace Nhom02
             }
             catch (Exception ex) { throw ex; }
         }
+
+
+        public bool Xoa(string idThe)
+        {
+            this.connect();
+            bool bCheck = true;
+            string query = "DELETE FROM TheKhachHang WHERE([id] = @ID)";
+            this.cm = new SqlCommand(query, cnn);
+            this.cm.Parameters.Add(new SqlParameter("@ID", idThe));
+            try
+            {
+                this.cm.ExecuteNonQuery();
+                this.disconnect();
+            }
+            catch (Exception ex)
+            {
+                this.disconnect();
+                bCheck = false;
+                throw ex;
+            }
+            return bCheck;
+        }
+
+
+        //public bool CapNhat(TheKhachHangDTO the)
+        //{
+        //    this.connect();
+        //    bool bCheck = true;
+        //    string query = "UPDATE TheKhachHang SET [HoTen]=@HOTEN, [SDT]=@SDT, [NgaySinh]=@NGAYSINH, [CMND]=@CMND," +
+        //        "[DiemTichLuy]=@DIEMTICHLUY where [id] = @ID";
+        //    this.cm = new SqlCommand(query, cnn);
+        //    this.cm.Parameters.Add(new SqlParameter("@HOTEN", the.HoTen.Trim()));
+        //    this.cm.Parameters.Add(new SqlParameter("@SDT", the.SDT.Trim()));
+        //    this.cm.Parameters.Add(new SqlParameter("@NGAYSINH", the.NgaySinh.Date));
+        //    this.cm.Parameters.Add(new SqlParameter("@CMND", the.CMND.Trim()));
+        //    this.cm.Parameters.Add(new SqlParameter("@DIEMTICHLUY", the.DiemTichLuy));
+        //    this.cm.Parameters.Add(new SqlParameter("@ID", the.Id));
+
+        //    try
+        //    { this.cm.ExecuteNonQuery(); this.disconnect(); }
+        //    catch (Exception ex) { this.disconnect(); bCheck = false; throw ex; }
+        //    return bCheck;
+        //}
+
 
         //public DataTable TimKiemTuKhoa(string keyword, string category)
         //{
@@ -124,26 +148,6 @@ namespace Nhom02
         //    catch (Exception ex) { throw ex; }
         //}
 
-        public bool Xoa(string idThe)
-        {
-            this.connect();
-            bool bCheck = true;
-            string query = "DELETE FROM TheKhachHang WHERE([id] = @ID)";
-            this.cm = new SqlCommand(query, cnn);
-            this.cm.Parameters.Add(new SqlParameter("@ID", idThe));
-            try
-            {
-                this.cm.ExecuteNonQuery();
-                this.disconnect();
-            }
-            catch (Exception ex)
-            {
-                this.disconnect();
-                bCheck = false;
-                throw ex;
-            }
-            return bCheck;
-        }
         #endregion
     }
 }

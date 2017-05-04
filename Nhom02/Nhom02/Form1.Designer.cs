@@ -36,8 +36,8 @@
             this.btnSuaThe = new System.Windows.Forms.ToolStripButton();
             this.btnXoaThe = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.tSTextTimKiem = new System.Windows.Forms.ToolStripTextBox();
+            this.btnTimKiem = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
@@ -90,18 +90,17 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1137, 608);
+            this.tabControl1.Size = new System.Drawing.Size(853, 494);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.dataGridViewThe);
             this.tabPage1.Controls.Add(this.toolStrip1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1129, 579);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(845, 468);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thẻ khách hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -113,10 +112,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewThe.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewThe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewThe.Location = new System.Drawing.Point(0, 39);
+            this.dataGridViewThe.Location = new System.Drawing.Point(0, 32);
             this.dataGridViewThe.Margin = new System.Windows.Forms.Padding(0);
             this.dataGridViewThe.Name = "dataGridViewThe";
-            this.dataGridViewThe.Size = new System.Drawing.Size(1127, 537);
+            this.dataGridViewThe.Size = new System.Drawing.Size(845, 436);
             this.dataGridViewThe.TabIndex = 1;
             // 
             // toolStrip1
@@ -130,11 +129,11 @@
             this.btnSuaThe,
             this.btnXoaThe,
             this.toolStripSeparator1,
-            this.toolStripTextBox1,
-            this.toolStripButton4});
-            this.toolStrip1.Location = new System.Drawing.Point(4, 4);
+            this.tSTextTimKiem,
+            this.btnTimKiem});
+            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(248, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(247, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -172,28 +171,27 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripTextBox1
+            // tSTextTimKiem
             // 
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(132, 27);
+            this.tSTextTimKiem.Name = "tSTextTimKiem";
+            this.tSTextTimKiem.Size = new System.Drawing.Size(100, 27);
             // 
-            // toolStripButton4
+            // btnTimKiem
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Nhom02.Properties.Resources.find;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton4.Text = "Tim kiem";
+            this.btnTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnTimKiem.Image = global::Nhom02.Properties.Resources.find;
+            this.btnTimKiem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(24, 24);
+            this.btnTimKiem.Text = "Tìm kiếm thẻ";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.toolStrip2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1129, 579);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(845, 468);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "function2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -211,9 +209,9 @@
             this.toolStripSeparator2,
             this.toolStripTextBox2,
             this.toolStripButton8});
-            this.toolStrip2.Location = new System.Drawing.Point(4, 4);
+            this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(248, 27);
+            this.toolStrip2.Size = new System.Drawing.Size(186, 27);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -252,7 +250,7 @@
             // toolStripTextBox2
             // 
             this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(132, 27);
+            this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
             // 
             // toolStripButton8
             // 
@@ -266,10 +264,9 @@
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1129, 579);
+            this.tabPage3.Size = new System.Drawing.Size(845, 468);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quản lý ca";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -286,13 +283,12 @@
             this.tableLayoutPanel1.Controls.Add(this.toolStrip3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewCa, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewCTCa, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 4);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.921052F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.07895F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1111, 561);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(833, 456);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // toolStrip4
@@ -308,9 +304,9 @@
             this.toolStripSeparator4,
             this.toolStripTextBox3,
             this.toolStripButton9});
-            this.toolStrip4.Location = new System.Drawing.Point(555, 0);
+            this.toolStrip4.Location = new System.Drawing.Point(416, 0);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(556, 27);
+            this.toolStrip4.Size = new System.Drawing.Size(417, 26);
             this.toolStrip4.TabIndex = 4;
             this.toolStrip4.Text = "toolStrip4";
             // 
@@ -320,7 +316,7 @@
             this.toolStripButton1.Image = global::Nhom02.Properties.Resources.add;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(24, 23);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -329,7 +325,7 @@
             this.toolStripButton2.Image = global::Nhom02.Properties.Resources.edit;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton2.Size = new System.Drawing.Size(24, 23);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
@@ -338,18 +334,18 @@
             this.toolStripButton3.Image = global::Nhom02.Properties.Resources.del;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton3.Size = new System.Drawing.Size(24, 23);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 26);
             // 
             // toolStripTextBox3
             // 
             this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(185, 27);
+            this.toolStripTextBox3.Size = new System.Drawing.Size(140, 26);
             // 
             // toolStripButton9
             // 
@@ -357,7 +353,7 @@
             this.toolStripButton9.Image = global::Nhom02.Properties.Resources.find;
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton9.Size = new System.Drawing.Size(24, 23);
             this.toolStripButton9.Text = "toolStripButton9";
             // 
             // toolStrip3
@@ -375,7 +371,7 @@
             this.btnFindCa});
             this.toolStrip3.Location = new System.Drawing.Point(0, 0);
             this.toolStrip3.Name = "toolStrip3";
-            this.toolStrip3.Size = new System.Drawing.Size(555, 27);
+            this.toolStrip3.Size = new System.Drawing.Size(416, 26);
             this.toolStrip3.TabIndex = 1;
             this.toolStrip3.Text = "toolStrip3";
             // 
@@ -385,7 +381,7 @@
             this.btnAddCa.Image = global::Nhom02.Properties.Resources.add;
             this.btnAddCa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddCa.Name = "btnAddCa";
-            this.btnAddCa.Size = new System.Drawing.Size(24, 24);
+            this.btnAddCa.Size = new System.Drawing.Size(24, 23);
             this.btnAddCa.Text = "toolStripButton1";
             this.btnAddCa.Click += new System.EventHandler(this.btnAddCa_Click);
             // 
@@ -395,7 +391,7 @@
             this.btnEditCa.Image = global::Nhom02.Properties.Resources.edit;
             this.btnEditCa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnEditCa.Name = "btnEditCa";
-            this.btnEditCa.Size = new System.Drawing.Size(24, 24);
+            this.btnEditCa.Size = new System.Drawing.Size(24, 23);
             this.btnEditCa.Text = "toolStripButton2";
             // 
             // btnDeleteCa
@@ -404,19 +400,19 @@
             this.btnDeleteCa.Image = global::Nhom02.Properties.Resources.del;
             this.btnDeleteCa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteCa.Name = "btnDeleteCa";
-            this.btnDeleteCa.Size = new System.Drawing.Size(24, 24);
+            this.btnDeleteCa.Size = new System.Drawing.Size(24, 23);
             this.btnDeleteCa.Text = "toolStripButton3";
             this.btnDeleteCa.Click += new System.EventHandler(this.btnDeleteCa_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 26);
             // 
             // txtKeywordCa
             // 
             this.txtKeywordCa.Name = "txtKeywordCa";
-            this.txtKeywordCa.Size = new System.Drawing.Size(185, 27);
+            this.txtKeywordCa.Size = new System.Drawing.Size(140, 26);
             // 
             // btnFindCa
             // 
@@ -424,7 +420,7 @@
             this.btnFindCa.Image = global::Nhom02.Properties.Resources.find;
             this.btnFindCa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnFindCa.Name = "btnFindCa";
-            this.btnFindCa.Size = new System.Drawing.Size(24, 24);
+            this.btnFindCa.Size = new System.Drawing.Size(24, 23);
             this.btnFindCa.Text = "toolStripButton4";
             // 
             // dataGridViewCa
@@ -434,12 +430,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCa.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCa.Location = new System.Drawing.Point(4, 37);
-            this.dataGridViewCa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewCa.Location = new System.Drawing.Point(3, 29);
             this.dataGridViewCa.Name = "dataGridViewCa";
             this.dataGridViewCa.ReadOnly = true;
             this.dataGridViewCa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCa.Size = new System.Drawing.Size(547, 520);
+            this.dataGridViewCa.Size = new System.Drawing.Size(410, 424);
             this.dataGridViewCa.TabIndex = 5;
             this.dataGridViewCa.SelectionChanged += new System.EventHandler(this.dataGridViewCa_SelectionChanged);
             // 
@@ -450,21 +445,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewCTCa.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridViewCTCa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCTCa.Location = new System.Drawing.Point(559, 37);
-            this.dataGridViewCTCa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewCTCa.Location = new System.Drawing.Point(419, 29);
             this.dataGridViewCTCa.Name = "dataGridViewCTCa";
             this.dataGridViewCTCa.ReadOnly = true;
             this.dataGridViewCTCa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCTCa.Size = new System.Drawing.Size(548, 520);
+            this.dataGridViewCTCa.Size = new System.Drawing.Size(411, 424);
             this.dataGridViewCTCa.TabIndex = 6;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 606);
+            this.ClientSize = new System.Drawing.Size(852, 492);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buffet Hương Rừng";
@@ -526,8 +519,8 @@
         private System.Windows.Forms.ToolStripButton btnSuaThe;
         private System.Windows.Forms.ToolStripButton btnXoaThe;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripTextBox tSTextTimKiem;
+        private System.Windows.Forms.ToolStripButton btnTimKiem;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.DataGridView dataGridViewThe;
     }
