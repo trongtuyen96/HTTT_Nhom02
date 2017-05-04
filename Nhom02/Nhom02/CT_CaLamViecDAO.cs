@@ -16,7 +16,9 @@ namespace Nhom02
         public DataTable Search(string id)
         {
             SqlCommand cm = new SqlCommand();
-            cm.CommandText = "select * from CT_CaLamViec where idCa=@ID";
+            //cm.CommandText = "select * from CT_CaLamViec where idCa=@ID";
+            cm.CommandText = "SELECT NhanVien.HoTen, CT_CaLamViec.KhuVucLamViec, CT_CaLamViec.LoaiCa " +
+                "FROM CT_CaLamViec INNER JOIN NhanVien ON CT_CaLamViec.idNhanVien = NhanVien.id where CT_CaLamViec.idCa=@ID";
             cm.Parameters.AddWithValue("@ID", id);
             try
             {

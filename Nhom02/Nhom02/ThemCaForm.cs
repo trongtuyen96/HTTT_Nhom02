@@ -39,5 +39,10 @@ namespace Nhom02
             ChiaCaNVForm chiaForm = new ChiaCaNVForm(dateTimePicker.Value, cmbLoaiCa.SelectedItem.ToString());
             chiaForm.ShowDialog();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
