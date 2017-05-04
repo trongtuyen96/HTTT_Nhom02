@@ -26,7 +26,7 @@ namespace Nhom02
                     MonAnDTO monAn = new MonAnDTO();
                     monAn.Id = row["id"].ToString();
                     monAn.TenMon = row["TenMon"].ToString();
-                    monAn.Gia = int.Parse(row["Gia"].ToString());
+                    monAn.Gia = double.Parse(row["Gia"].ToString());
                     ar.Add(monAn);
                 }
                 this.disconnect();
@@ -34,6 +34,28 @@ namespace Nhom02
             }
             catch (Exception ex) { return null; }
         }
+        //public bool themMonAn()
+        //{
+        //    this.connect();
+        //    bool bCheck = true;
 
+        //    string query = "INSERT INTO MonAn([id],[TenMon],[Gia]) VALUES(@ID,@TENMON,@GIA)";
+        //    this.cm = new SqlCommand(query, cnn);
+        //    this.cm.Parameters.Add(new SqlParameter("@ID", "5"));
+        //    this.cm.Parameters.Add(new SqlParameter("@TENMON", "Salad"));
+        //    this.cm.Parameters.Add(new SqlParameter("@GIA", 50000));
+        //    try
+        //    {
+        //        this.cm.ExecuteNonQuery();
+        //        this.disconnect();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        this.disconnect();
+        //        bCheck = false;
+        //        throw ex;
+        //    }
+        //    return bCheck;
+        //}
     }
 }
