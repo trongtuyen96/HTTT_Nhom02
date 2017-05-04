@@ -13,9 +13,11 @@ namespace Nhom02
     {
         CaLamViecCTL _caData = new CaLamViecCTL();
         CT_CaLamViecCTL _ctCaData = new CT_CaLamViecCTL();
+        TheKhachHangCTL _theData = new TheKhachHangCTL();
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();  
+            loadDataGridViewTheKhachHang();
             loadDataGridViewCa();
         }
 
@@ -62,12 +64,48 @@ namespace Nhom02
                 }
             };
         }
+        private void loadDataGridViewTheKhachHang()
+        {
+            DataTable theData = _theData.LoadDuLieu();
+            dataGridViewThe.DataSource = theData;
+
+            dataGridViewThe.DataBindingComplete += (o, _) =>
+            {
+                var dataGridView = o as DataGridView;
+                if (dataGridView != null)
+                {
+                    dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                    dataGridView.Columns[dataGridView.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
+            };
+        }
 
         private void dataGridViewCa_SelectionChanged(object sender, EventArgs e)
         {
             // index row đang được chọn
             int rowindex = dataGridViewCa.CurrentCell.RowIndex;
             loadDataGridViewCTCa(dataGridViewCa.Rows[rowindex].Cells[0].Value.ToString());
+        }
+
+        private void btnThemThe_Click(object sender, EventArgs e)
+        {
+            ThemTheKhachHangForm themTheKhachHangForm = new ThemTheKhachHangForm();
+            if (themTheKhachHangForm.ShowDialog() == DialogResult.OK)
+            {
+                //refresh datagridview thẻ khách hàng
+                loadDataGridViewTheKhachHang();
+            }
+        }
+
+        private void btnXoaThe_Click(object sender, EventArgs e)
+        {
+            // index row đang được chọn
+            int rowindex = dataGridViewThe.CurrentCell.RowIndex;
+            // delete theo id 
+            _theData.Xoa(dataGridViewThe.Rows[rowindex].Cells[0].Value.ToString());
+
+            // load lại danh sách thẻ
+            loadDataGridViewTheKhachHang();
         }
 
         private void btnDeleteCa_Click(object sender, EventArgs e)

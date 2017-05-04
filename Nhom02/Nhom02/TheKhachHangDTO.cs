@@ -99,9 +99,9 @@ namespace Nhom02
         #endregion
 
         #region Contructor
-        public TheKhachHangDTO(string id, string hoTen, string SDT, DateTime ngaySinh, string CMND, int diemTichLuy)
+        public TheKhachHangDTO(string hoTen, string SDT, DateTime ngaySinh, string CMND, int diemTichLuy)
         {
-            Id = id;
+            //Id = id;
             HoTen = hoTen;
             this.SDT = SDT;
             NgaySinh = ngaySinh;
@@ -109,8 +109,6 @@ namespace Nhom02
             DiemTichLuy = diemTichLuy;
         }
         #endregion
-
-       
 
     }
 }
