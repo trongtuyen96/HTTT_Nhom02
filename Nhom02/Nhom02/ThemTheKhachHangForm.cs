@@ -21,15 +21,23 @@ namespace Nhom02
 
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
-            if (theCtl.Them(textHoTen.Text, textSDT.Text, dtpNgaySinh.Value, textCMND.Text, 20))
+            if (textHoTen.Text.Length == 0 || textSDT.Text.Length == 0 || textCMND.Text.Length == 0)
             {
-                MessageBox.Show("Thêm thẻ thành công", "Thông báo",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DialogResult = DialogResult.OK;
-                Close();
+                MessageBox.Show("Thông tin không được trống", "Lỗi",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show("Thêm thẻ thất bại", "Lỗi",
-                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                if (theCtl.Them(textHoTen.Text, textSDT.Text, dtpNgaySinh.Value, textCMND.Text, 20))
+                {
+                    MessageBox.Show("Thêm thẻ thành công", "Thông báo",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogResult = DialogResult.OK;
+                    Close();
+                }
+                else MessageBox.Show("Thêm thẻ thất bại", "Lỗi",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
