@@ -12,11 +12,17 @@ namespace Nhom02
     public partial class ChiaCaNVForm : Form
     {
         private NhanVienCTL _ctlNhanVien = new NhanVienCTL();
+        private CT_CaLamViecCTL _ctlCTCa = new CT_CaLamViecCTL();
+        private string idCa;
         public ChiaCaNVForm(DateTime ngay, string loai)
         {
             InitializeComponent();
             lbNgay.Text = ngay.ToString("dd/MM/yyyy");
             lbLoaiCa.Text = loai;
+
+            if (loai == "Trưa")
+                idCa = ngay.ToString("ddmmyyyy") + "Tr";
+            else idCa = ngay.ToString("ddmmyyyy") + "To";
 
             // load danh sách nhân viên vào dataGridViewNV
             loadDataGridViewNV();
@@ -64,9 +70,42 @@ namespace Nhom02
             if (rowFound == -1)
             {
                 DataGridViewRow row = (DataGridViewRow)dataGridViewMain.RowTemplate.Clone();
-                row.CreateCells(dataGridViewMain, id, name, chucVu, cmbKhuVuc.SelectedItem.ToString(), "Chính");
+                if(chucVu == "Bếp trưởng")
+                    row.CreateCells(dataGridViewMain, id, name, chucVu, "", "Chính");
+                else
+                    row.CreateCells(dataGridViewMain, id, name, chucVu, cmbKhuVuc.SelectedItem.ToString(), "Chính");
 
                 dataGridViewMain.Rows.Add(row);
+                dataGridViewMain.Sort(dataGridViewMain.Columns[3], ListSortDirection.Ascending);
+            }
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            // save bảng chia việc
+            // tạo DataTable để lấy data trong grid view
+            DataTable table = new DataTable();
+            table.Columns.Add(new DataColumn("idCa", typeof(string)));
+            table.Columns.Add(new DataColumn("idNhanVien", typeof(string)));
+            table.Columns.Add(new DataColumn("KhuVucLamViec", typeof(string)));
+            table.Columns.Add(new DataColumn("LoaiCa", typeof(string)));
+
+            object[] cellValues = new object[4];
+            foreach (DataGridViewRow row in dataGridViewMain.Rows)
+            {
+                if (row.Cells[0].Value != null)
+                {
+                    cellValues[0] = idCa;
+                    cellValues[1] = row.Cells[0].Value;
+                    cellValues[2] = row.Cells[3].Value;
+                    cellValues[3] = row.Cells[4].Value;
+                    table.Rows.Add(cellValues);
+                }
+            }
+            if (_ctlCTCa.save(table))
+            {
+                DialogResult = DialogResult.OK;
+                Close();
             }
         }
     }
