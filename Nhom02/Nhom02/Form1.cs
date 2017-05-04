@@ -47,6 +47,7 @@ namespace Nhom02
                     dataGridView.Columns[dataGridView.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
             };
+            dataGridViewCa.Sort(dataGridViewCa.Columns[1], ListSortDirection.Ascending);
         }
 
         private void loadDataGridViewCTCa(string id)
@@ -63,6 +64,7 @@ namespace Nhom02
                     dataGridView.Columns[dataGridView.ColumnCount - 1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                 }
             };
+            dataGridViewCa.Sort(dataGridViewCa.Columns[1], ListSortDirection.Ascending);
         }
         private void loadDataGridViewTheKhachHang()
         {
@@ -83,8 +85,11 @@ namespace Nhom02
         private void dataGridViewCa_SelectionChanged(object sender, EventArgs e)
         {
             // index row đang được chọn
-            int rowindex = dataGridViewCa.CurrentCell.RowIndex;
-            loadDataGridViewCTCa(dataGridViewCa.Rows[rowindex].Cells[0].Value.ToString());
+            if (dataGridViewCa.CurrentCell != null)
+            {
+                int rowindex = dataGridViewCa.CurrentCell.RowIndex;
+                loadDataGridViewCTCa(dataGridViewCa.Rows[rowindex].Cells[0].Value.ToString());
+            }
         }
 
         private void btnThemThe_Click(object sender, EventArgs e)
