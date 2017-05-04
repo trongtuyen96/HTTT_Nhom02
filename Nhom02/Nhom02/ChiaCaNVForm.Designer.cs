@@ -216,6 +216,7 @@
             this.dataGridViewNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewNV.Location = new System.Drawing.Point(3, 37);
             this.dataGridViewNV.Name = "dataGridViewNV";
+            this.dataGridViewNV.ReadOnly = true;
             this.dataGridViewNV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewNV.Size = new System.Drawing.Size(428, 411);
             this.dataGridViewNV.TabIndex = 2;
@@ -235,6 +236,7 @@
             this.Loai});
             this.dataGridViewMain.Location = new System.Drawing.Point(485, 37);
             this.dataGridViewMain.Name = "dataGridViewMain";
+            this.dataGridViewMain.ReadOnly = true;
             this.dataGridViewMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewMain.Size = new System.Drawing.Size(478, 411);
             this.dataGridViewMain.TabIndex = 3;
@@ -323,6 +325,7 @@
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "Xác nhận";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // ChiaCaNVForm
             // 

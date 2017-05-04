@@ -51,6 +51,8 @@
     <Compile Include="ChiaCaNVForm.Designer.cs">
       <DependentUpon>ChiaCaNVForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CT_CaLamViecCTL.cs" />
+    <Compile Include="CT_CaLamViecDAO.cs" />
     <Compile Include="CT_CaLamViecDTO.cs" />
     <Compile Include="CaLamViecDAO.cs" />
     <Compile Include="DataProvider.cs" />
